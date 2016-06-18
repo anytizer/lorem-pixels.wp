@@ -15,8 +15,21 @@ API based lorem lipsum styled random text and image generator.
 
 == Description ==
 
-Allows you to insert a snippet to randomly generate text and images at runtime. Use shortcodes: <code>[lorem]</code>, <code>[image width="200" height="100"]</code>.
-Images served using <a href="http://unsplash.com/">Unsplash</a>.
+Allows you to insert a snippet to randomly generate text and images at runtime.
+
+This is a development purpose plugin. It helps you to quickly build text and images for your website. Until you come up with a final text that is suitable for your website, you can use the available shortcodes for your dummy text and image.
+
+
+= Random Text =
+
+Use shortcode: <code>[lorem]</code> for random text.
+The text is served as [micro-service api](https://github.com/bimalpoudel/micro-services/tree/master/micro-services/lorem) hosted at <a href="http://bimal.org.np/micro-services/lorem/lorem.php">http://bimal.org.np/micro-services/lorem/lorem.php</a>.
+
+
+= Random Image =
+
+Use shortcode <code>[pixel width="200" height="100"]</code> for random images.
+Images are served using <a href="http://unsplash.com/">Unsplash API</a> and/or other public image hosting services.
 
 
 == Installation ==
@@ -40,7 +53,7 @@ Images served using <a href="http://unsplash.com/">Unsplash</a>.
 
  * Download the file lorem-pixels.zip.
  * Unzip the file on your computer.
- * Upload folder hosted-content-importer (you just unziped) to /wp-content/plugins/ directory.
+ * Upload folder lorem-pixels (you just unzipped) to /wp-content/plugins/ directory.
  * Activate the plugin through the WP Admin > Plugins menu.
 
 Click on [how to install a WordPress Plugin](http://goo.gl/Ims8pt) for more details.
@@ -59,7 +72,10 @@ Example for random text:
 
 Example for random image:
 
-`[image width="200" height="100"]`
+`[pixel width="200" height="100"]`
+
+The image server possibly allows to generate images of arbitrary dimensions. You can use your best fitting dimensions.
+
 
 == Screenshots ==
 
@@ -74,4 +90,5 @@ Example for random image:
 
 == Upgrade Notice ==
 
-When this plugin is used and disabled, your blogs will show your `[lorem]` shortcode as it is.
+When this plugin is used and disabled, your blogs will show your `[lorem]` and `[pixel]` shortcodes in raw format.
+Once you gather real contents and images for your website, replace those shortcodes.

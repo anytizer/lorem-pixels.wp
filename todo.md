@@ -1,0 +1,1 @@
+Set pixel's default height and width in Options.
