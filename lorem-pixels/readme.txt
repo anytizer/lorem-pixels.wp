@@ -29,7 +29,7 @@ The text is served as [micro-service api](https://github.com/bimalpoudel/micro-s
 = Random Image =
 
 Use shortcode <code>[pixel width="200" height="100"]</code> for random images.
-Images are served using <a href="http://unsplash.com/">Unsplash API</a> and/or other public image hosting services.
+Images are served using <a href="http://placehold.it/">PlaceHold.it</a> and/or other public image hosting services.
 
 
 == Installation ==
